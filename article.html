@@ -25,16 +25,19 @@
 
 .flashcard-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increase minimum width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-auto-rows: minmax(200px, auto);  /* Set minimum row height to match flashcard min-height */
   grid-gap: 20px 40px; 
   justify-content: center;
 }
+
 .flashcard {
-  cursor: pointer; /* Indicate that the card is clickable */
-  width: 100%; /* Let the grid container control the width */
-  height: auto; /* Let the content determine the height */
-  min-height: 200px; /* Ensure a minimum height for readability */
+  cursor: pointer;
+  width: 100%; 
+  height: auto; 
+  min-height: 200px; 
 }
+
 .flashcard:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a hover effect */
 }
