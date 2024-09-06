@@ -36,8 +36,10 @@
   cursor: pointer;
   width: 100%; 
   height: auto; 
-  min-height: 200px; 
+  display: flex; /* Use flexbox to control content layout */
+  align-items: center; /* Vertically center the content */
 }
+
 
 .flashcard:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a hover effect */
@@ -56,6 +58,8 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.6s; 
   transform-style: preserve-3d; 
+  flex: 1 0 auto; /* Allow the front/back to expand and take up available space */
+
 }
 
 .front {
