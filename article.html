@@ -26,6 +26,8 @@
 .flashcard-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-template-rows: repeat(3, 1fr); /* Or specify fixed heights if needed */
+
   grid-auto-rows: minmax(200px, auto);  /* Set minimum row height to match flashcard min-height */
   grid-gap: 20px 40px; 
   justify-content: center;
