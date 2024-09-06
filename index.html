@@ -12,10 +12,24 @@ body {
 }
 
 .navbar {
-  height: 10vh; 
-  background-color: #e0f2f1; 
+  height: 10vh;
+  background-color: #2196f3; /* Example: Material Blue */
   color: white;
   padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.navbar a { /* Style the navigation links */
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
 }
 
 .grid-container {
