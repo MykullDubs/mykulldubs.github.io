@@ -24,20 +24,16 @@
 }
 
 .flashcard-container {
-  background-color:#e3f2fd;
   display: grid;
-  grid-auto-rows: minmax(150px, auto); /* Set minimum row height */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px 40px; /* Adjust the second value for vertical gap */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increase minimum width */
+  grid-gap: 20px 40px; 
   justify-content: center;
 }
-
-
 .flashcard {
   cursor: pointer; /* Indicate that the card is clickable */
-  width: 250px; 
-  margin: 10px;
-  perspective: 1000px; 
+  width: 100%; /* Let the grid container control the width */
+  height: auto; /* Let the content determine the height */
+  min-height: 200px; /* Ensure a minimum height for readability */
 }
 .flashcard:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a hover effect */
