@@ -37,20 +37,28 @@
   height: auto; 
   perspective: 1000px; /* For the 3D flip effect */
 }
-
+.flashcard-inner { /* New container for front and back */
+  position: relative; /* To contain the absolutely positioned faces */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
 
 .flashcard:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a hover effect */
 }
 
 .front, .back {
+  position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; 
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+  backface-visibility: hidden;   
+
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow:   
+ 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Remove the transition and transform-style from here */
 }
 
 .front {
@@ -73,7 +81,9 @@
   overflow: auto; 
 }
 
-
+.flashcard.flipped .flashcard-inner { /* Apply transform to the container */
+  transform: rotateY(-180deg); 
+}
 .back hr {
   margin: 10px 0; /* Add some spacing around the divider */
   border: 0; /* Remove default border */
