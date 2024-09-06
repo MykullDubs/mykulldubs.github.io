@@ -90,11 +90,14 @@
 
 .flashcard.flipped .front {
   transform: rotateY(-180deg); 
+  z-index: 1; /* Ensure front is behind the back when flipped */
 }
 
 .flashcard.flipped .back {
   transform: rotateY(0deg); 
+  z-index: 2; /* Ensure back is on top when flipped */
 }
+
 #transcript { /* Target the transcript tab panel directly */
   margin: 20px; /* Adjust the margin value as needed */
 }
