@@ -231,14 +231,16 @@
     componentHandler.upgradeAllRegistered(); 
   });
 
-  // JavaScript to handle card flipping (simplified)
+  // JavaScript to handle card flipping
   const flashcards = document.querySelectorAll('.flashcard');
 
   flashcards.forEach(card => {
     card.addEventListener('click', () => {
-      card.classList.toggle('flipped'); // Toggle the 'flipped' class directly on the .flashcard
+      card.classList.toggle('flipped');   
+ 
     });
   });
 </script>
+
 </body>
 </html>
