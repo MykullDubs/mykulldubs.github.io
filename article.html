@@ -32,12 +32,16 @@
 .flashcard {
   cursor: pointer;
   width: 100%;
+  min-height: 200px; 
+  display: flex;
+  flex-direction: column; 
   height: auto;
   perspective: 1000px; 
 }
 
 .flashcard-inner { 
   position: relative; 
+  flex: 1 0 auto; 
   width: 100%;
   height: 100%;
   transition: transform 0.6s;
@@ -45,7 +49,7 @@
 }
 
 .front, .back {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -66,7 +70,7 @@
   background-color: #3f51b5;
   color: white;
   transform: rotateY(180deg);
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 20px;
   overflow: auto; 
@@ -92,7 +96,13 @@
   font-size: 0.9em;
   line-height: 1.5;
 }
+.flashcard.flipped .front {
+  display: none; /* Hide the front face when flipped */
+}
 
+.flashcard.flipped .back {
+  display: flex; /* Show the back face when flipped */
+}
 .flashcard.flipped .flashcard-inner { 
   transform: rotateY(-180deg); 
 }
