@@ -5,8 +5,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 <style>
-
-
 .video-container {
   /* Style your video container as needed */
 }
@@ -20,45 +18,39 @@
 }
 
 .mdl-tabs__tab-panel.is-active {
-  display: block; 
+  display: block;
 }
 
 .flashcard-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  grid-template-rows: repeat(3, 1fr); /* Or specify fixed heights if needed */
-  grid-gap: 20px 40px; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 20px 40px;
   justify-content: center;
 }
 
 .flashcard {
   cursor: pointer;
-  width: 100%; 
-  height: auto; 
-  perspective: 1000px; /* For the 3D flip effect */
+  width: 100%;
+  height: auto;
+  perspective: 1000px; 
 }
-.flashcard-inner { /* New container for front and back */
-  position: relative; /* To contain the absolutely positioned faces */
+
+.flashcard-inner { 
+  position: relative; 
   width: 100%;
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
 
-.flashcard:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a hover effect */
-}
-
 .front, .back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;   
-
+  backface-visibility: hidden;
   border-radius: 5px;
-  box-shadow:   
- 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Remove the transition and transform-style from here */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .front {
@@ -74,21 +66,23 @@
   background-color: #3f51b5;
   color: white;
   transform: rotateY(180deg);
-  transform-origin: top; 
   display: flex;
   flex-direction: column;
   padding: 20px;
   overflow: auto; 
+  transform-origin: top; /* Rotate around the top edge */
 }
 
-.flashcard.flipped .flashcard-inner { /* Apply transform to the container */
-  transform: rotateY(-180deg); 
+.flashcard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
 .back hr {
-  margin: 10px 0; /* Add some spacing around the divider */
-  border: 0; /* Remove default border */
-  border-top: 1px solid rgba(255, 255, 255, 0.5); /* Add a subtle white line */
+  margin: 10px 0; 
+  border: 0; 
+  border-top: 1px solid rgba(255, 255, 255, 0.5); 
 }
+
 .front p {
   font-size: 1.2em;
   font-weight: bold;
@@ -99,20 +93,13 @@
   line-height: 1.5;
 }
 
-.flashcard.flipped .front {
+.flashcard.flipped .flashcard-inner { 
   transform: rotateY(-180deg); 
-  z-index: 1; /* Ensure front is behind the back when flipped */
 }
 
-.flashcard.flipped .back {
-  transform: rotateY(0deg); 
-  z-index: 2; /* Ensure back is on top when flipped */
+#transcript { 
+  margin: 20px; 
 }
-
-#transcript { /* Target the transcript tab panel directly */
-  margin: 20px; /* Adjust the margin value as needed */
-}
-
 </style>
 </head>
 <body>
