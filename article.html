@@ -231,13 +231,12 @@
     componentHandler.upgradeAllRegistered(); 
   });
 
-  // JavaScript to handle card flipping (updated)
+  // JavaScript to handle card flipping (simplified)
   const flashcards = document.querySelectorAll('.flashcard');
 
   flashcards.forEach(card => {
     card.addEventListener('click', () => {
-      const inner = card.querySelector('.flashcard-inner'); // Select the inner container
-      inner.classList.toggle('flipped'); 
+      card.classList.toggle('flipped'); // Toggle the 'flipped' class directly on the .flashcard
     });
   });
 </script>
