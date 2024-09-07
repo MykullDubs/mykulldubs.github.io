@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ESL Article - What Happens to Architectural  Art in a Building, When it's Purpose Changes?</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<style>
+.video-container {
+ /* Style your video container as needed */
+}
+
+.mdl-tabs {
+ /* Style your tabs navigation */
+ font-family: 'Roboto', sans-serif; /* Change to your desired font */
+  font-size: 32px;   /* Adjust font size */
+  font-weight: 500;  /* Adjust font weight */
+}
+
+.mdl-tabs__tab-panel {
+ display: none; 
+ overflow-y: auto;
+
+}
+
+.mdl-tabs__tab-panel.is-active {
+ display: block; 
+}
+
+.flashcard-container {
+  margin-top: 2pc;    /* Top margin */
+  margin-right: 15px;  /* Right margin */
+  margin-bottom: 25px; /* Bottom margin */
+  margin-left: 10px;   /* Left margin */
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ grid-auto-rows: minmax(200px, auto);
+ grid-gap: 20px 20px;
+ justify-content: center;
+}
+
+.flashcard {
+ cursor: pointer;
+ width: 97%; 
+ height: auto; 
+ min-height: 200px; 
+ perspective: 1000px; 
+ transition: transform 0.6s; 
+ transform-style: preserve-3d;
+
+ /* Use flexbox to center content */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.front, .back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden; 
+ border-radius: 2px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.front {
+ background-color: #fff;
+ color: #333;
+ /* Center content within the front */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 5px;
+}
+
+.back {
+ background-color: #3f51b5;
+ color: white;
+ transform: rotateY(180deg); /* Initially rotate the back face */
+ display: flex;
+ flex-direction: column;
+ padding: 5px;
+ overflow: hidden; 
+}
+
+.flashcard:hover {
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.back hr {
+ margin: 10px 0; 
+ border: 0;
+ border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.front p {
+ font-size: 1.2em;
+ font-weight: bold;
+}
+
+.back p {
+ font-size: 0.9em;
+ line-height: 1.5;
+}
+
+.flashcard.flipped {
+ transform: rotateY(180deg); 
+}
+
+#transcript { 
+ margin: 20px; 
+ overflow-y: auto; /* Add vertical scrolling */
+
+}
+ #discussion {
+  overflow-y: auto;
+  font-size:28px;
+}
+</style>
+</head>
+<body>
+
+<div class="video-container">
+<iframe width="560" height="315" src="<iframe width="560" height="315" src="https://www.youtube.com/embed/h2r2CS-wr5o?si=87QqQPt2F37uUDrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>https://www.youtube.com/embed/oihw8d7JWiY?si=Yr-UZ-04PioXhkGi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+    <a href="#vocabulary" class="mdl-tabs__tab is-active">Vocabulary</a>
+    <a href="#transcript" class="mdl-tabs__tab">Transcript</a>
+    <a href="#discussion" class="mdl-tabs__tab">Discussion</a>
+  </div>
+
+<div class="mdl-tabs__panel is-active" id="vocabulary">
+<div class="flashcard">
+  <div class="front">Commissioned</div>
+  <div class="back">
+    <p>Definition: To formally request or authorize the creation of a work of art, often for a specific purpose or location.</p>
+    <p>Example: Pfizer commissioned a mural depicting scientific innovation for their headquarters.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Advocates</div>
+  <div class="back">
+    <p>Definition: Individuals or groups who actively support or speak in favor of a cause or person.</p>
+    <p>Example: Art advocates are concerned about the future of the mural and want it preserved.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Reverence</div>
+  <div class="back">
+    <p>Definition: Deep respect or admiration for something or someone.</p>
+    <p>Example: The mural evokes a sense of reverence for the history of scientific progress.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Incorporate</div>
+  <div class="back">
+    <p>Definition: To include or combine something as part of a larger whole.</p>
+    <p>Example: Advocates hope the mural can be incorporated into an educational facility.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Cooperative</div>
+  <div class="back">
+    <p>Definition: Willing to work together or help; collaborative.</p>
+    <p>Example: The developer has been cooperative with those trying to save the mural.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Entity</div>
+  <div class="back">
+    <p>Definition: Something that exists independently, often an organization or institution.</p>
+    <p>Example: The company is a corporate entity that commissioned the mural.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Aspire</div>
+  <div class="back">
+    <p>Definition: To have a strong desire or ambition to achieve something.</p>
+    <p>Example: The mural represented what Pfizer wanted to aspire to be.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Reassembling</div>
+  <div class="back">
+    <p>Definition: To put something back together after it has been taken apart.</p>
+    <p>Example: The cost of reassembling the mural in a new location is significant.</p>
+  </div>
+</div>
+  </div>
+</div>
+
+  <div class="mdl-tabs__panel" id="transcript">
+    <p>Visiting New Zealand just got more expensive. The government announced Tuesday it will nearly triple entry fees for tourists to $100 NZD (or $62 USD). Authorities argued it would ensure visitors contributed to public services and high-quality experiences while visiting the country. Matt Ducey, the New Zealand Minister for Tourism and Hospitality, said, "What we want to do is shift some of the cost from the taxpayer to the visitor and ultimately what we want to do is grow tourism. Uh, we've got an ambitious target to double our exports as a country over the next 10 years. Tourism is our second-biggest export earner."
+
+    </p>
+    <p>The move hasn't gone down well with the holiday sector. New Zealand's tourism industry association fears the fee will put visitors off while it recovers from the hit it took during the pandemic. Gavin Oliver, Managing Director of Ecozip Adventure, said, "I think we're saddened by it. Um, it went to consultation; there were a number of levels proposed—um, $50, $70, and $100—and we advocated for $50. We felt there should be an increase, um, but this is a very, very significant increase at a time when the tourism sector is struggling to recover."
+    </p>
+    <p>A $35 NZD fee was introduced in July 2019 but hasn't proven enough to cover costs associated with so many visitors. New Zealand has struggled with the impact of tourists on the natural environment and with infrastructure stretched by the large numbers. The government said the new fee was competitive, and it was confident the country would remain an attractive destination. Official data released earlier Tuesday showed travel export receipts for the year ended June 30 were around $9 billion USD, down 5% from before the pandemic. Data also showed visitor numbers are roughly 80% of levels before the pandemic border closures.
+    </p>
+  </div>
+
+  <div class="mdl-tabs__panel" id="discussion">
+    <ul>
+      <li>Comprehension & Opinion: Why has the New Zealand government decided to increase the entry fee for tourists? Do you agree or disagree with this decision? Why?</li>
+      <li>Critical Thinking: How might the increased entry fee impact New Zealand's tourism industry in the short term and the long term?</li>
+      <li>Cultural Awareness: In your opinion, is it fair to ask tourists to contribute to the cost of public services and infrastructure in a country they are visiting? Why or why not?</li>
+    </ul>
+  </div>
+</div>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script>
+  // Initialize MDL components after the page loads
+  window.addEventListener('load', function() {
+    componentHandler.upgradeAllRegistered(); 
+  });
+
+  // JavaScript to handle card flipping
+  const flashcards = document.querySelectorAll('.flashcard');
+
+  flashcards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');   
+ 
+    });
+  });
+</script>
+
+</body>
+</html>
