@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ESL Article - Pigs Raised for Organ Donations</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<style>
+.video-container {
+ /* Style your video container as needed */
+}
+
+.mdl-tabs {
+ /* Style your tabs navigation */
+ font-family: 'Roboto', sans-serif; /* Change to your desired font */
+  font-size: 32px;   /* Adjust font size */
+  font-weight: 500;  /* Adjust font weight */
+}
+
+.mdl-tabs__tab-panel {
+ display: none; 
+ overflow-y: auto;
+
+}
+
+.mdl-tabs__tab-panel.is-active {
+ display: block; 
+}
+
+.flashcard-container {
+  margin-top: 2pc;    /* Top margin */
+  margin-right: 15px;  /* Right margin */
+  margin-bottom: 25px; /* Bottom margin */
+  margin-left: 10px;   /* Left margin */
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ grid-auto-rows: minmax(200px, auto);
+ grid-gap: 20px 20px;
+ justify-content: center;
+}
+
+.flashcard {
+ cursor: pointer;
+ width: 97%; 
+ height: auto; 
+ min-height: 200px; 
+ perspective: 1000px; 
+ transition: transform 0.6s; 
+ transform-style: preserve-3d;
+
+ /* Use flexbox to center content */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.front, .back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden; 
+ border-radius: 2px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.front {
+ background-color: #fff;
+ color: #333;
+ /* Center content within the front */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 5px;
+}
+
+.back {
+ background-color: #3f51b5;
+ color: white;
+ transform: rotateY(180deg); /* Initially rotate the back face */
+ display: flex;
+ flex-direction: column;
+ padding: 5px;
+ overflow: hidden; 
+}
+
+.flashcard:hover {
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.back hr {
+ margin: 10px 0; 
+ border: 0;
+ border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.front p {
+ font-size: 1.2em;
+ font-weight: bold;
+}
+
+.back p {
+ font-size: 0.9em;
+ line-height: 1.5;
+}
+
+.flashcard.flipped {
+ transform: rotateY(180deg); 
+}
+
+#transcript { 
+ margin: 20px; 
+ overflow-y: auto; /* Add vertical scrolling */
+
+}
+ #discussion {
+  overflow-y: auto;
+  font-size:28px;
+}
+</style>
+</head>
+<body>
+
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yw4c9bzkiAw?si=8kG-60dYtnrWW5HB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+    <a href="#vocabulary" class="mdl-tabs__tab is-active">Vocabulary</a>
+    <a href="#transcript" class="mdl-tabs__tab">Transcript</a>
+    <a href="#discussion" class="mdl-tabs__tab">Discussion</a>
+  </div>
+
+<div class="mdl-tabs__panel is-active" id="vocabulary">
+  <div class="flashcard-container">
+
+    <div class="flashcard">
+  <div class="front">Homebuilder</div>
+  <div class="back">
+    <p>Definition: A company that constructs houses.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Complaint</div>
+  <div class="back">
+    <p>Definition: A formal expression of dissatisfaction.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Harassing</div>
+  <div class="back">
+    <p>Definition: Persistently annoying or bothering someone.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Falsified</div>
+  <div class="back">
+    <p>Definition: Altered or made up to deceive.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Bullying</div>
+  <div class="back">
+    <p>Definition: Using strength or power to intimidate or harm someone.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Hearing</div>
+  <div class="back">
+    <p>Definition: A formal meeting to gather information or evidence.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Investigator</div>
+  <div class="back">
+    <p>Definition: A person who examines a situation to discover the truth.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Suspended</div>
+  <div class="back">
+    <p>Definition: Temporarily stopped or prevented from continuing.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Statutes</div>
+  <div class="back">
+    <p>Definition: Written laws enacted by a legislative body.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Satirical</div>
+  <div class="back">
+    <p>Definition: Using humor or irony to criticize or mock something.</p>
+  </div>
+</div>
+
+  </div>
+</div>
+  <div class="mdl-tabs__panel" id="transcript">
+    <p>This is the culmination of decades of research. The future would be a world where you wouldn't have to go on an organ transplant list, but instead have access to an unlimited supply of healthy, young organs. </p>
+
+<p>Experiments in pig organ transplants have ramped up in recent years, with companies racing to get ready for clinical trials as soon as next year to test this new technology on a larger scale. </p>
+
+<p>United Therapeutics' Facility</p>
+
+<p>The Associated Press got an exclusive look at United Therapeutics' new facility in the mountains of Virginia, where pigs for clinical trials are raised. The facility includes a cloning lab, a research farm, and a facility where they are raising the pigs for future clinical trials.</p>
+
+<p>Cloning Lab</p>
+
+<p>In the cloning lab, genetically modified piglets are cloned every week. Scientists start with a pig egg cell and carefully remove its DNA, leaving a cell with no genes. Later, they add genes that have been edited to make the pig's organs more suitable for people. These gene edits ensure the pigs only grow to a certain size or block the production of proteins that could trigger rejection. </p>
+
+<p>Research Farm</p>
+
+<p>The genetically modified pigs live at the research farm, where organs are retrieved for animal-to-human transplant experiments. </p>
+
+<p>Designated Pathogen-Free Facility</p>
+
+<p>United Therapeutics' third facility is the first of its kind designated pathogen-free facility. This facility is designed to keep out pathogens that are of concern specifically for humans and organs. The building doesn't look like a farm, but this is where the herd of pigs that will eventually supply organs for clinical trials are raised. They are behind a protected barrier within the building, and everything going in and out of the barrier is decontaminated. Every person who goes in to care for the pigs goes through a rigorous timed shower to make sure no unwanted germs can get to the pigs, making these some of the cleanest pigs in the world.</p>
+
+<p>The Future</p>
+
+<p>United Therapeutics hopes that clinical trials are around the corner. The FDA has to decide whether the body of data is sufficient to allow them to go forward with clinical trials. This is the culmination of everything in the field of xenotransplantation happening in the last few years, and the next few years are going to be exciting as we go to full-on clinical trials for heart and kidney transplants.</p>
+
+  </div>
+
+  <div class="mdl-tabs__panel" id="discussion">
+    <ol>
+<li>
+  <h3>Critical Thinking:</h3>
+  <p>
+Analyze the potential ethical dilemmas associated with xenotransplantation, particularly concerning animal welfare and the potential for cross-species disease transmission.  </p>
+</li>
+
+<li>
+  <h3>Vocabulary Expansion:</h3>
+  <p>
+Explain the concept of decontamination and provide examples of other settings or scenarios where it is essential.  </p>
+</li>
+
+<li>
+  <h3>Making Connections:</h3>
+  <p>
+Assess the potential impact of successful pig organ transplants on patients awaiting organ donations and the healthcare system as a whole. Discuss the potential benefits and challenges.  </p>
+</li>
+
+<li>
+  <h3>Predicting the Future:</h3>
+  <p>
+  Envision a future where xenotransplantation is a standard medical procedure. Propose other innovative medical technologies or treatments that this breakthrough could potentially lead to.
+</li>
+</ol>
+  </div>
+</div>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script>
+  // Initialize MDL components after the page loads
+  window.addEventListener('load', function() {
+    componentHandler.upgradeAllRegistered(); 
+  });
+
+  // JavaScript to handle card flipping
+  const flashcards = document.querySelectorAll('.flashcard');
+
+  flashcards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');   
+ 
+    });
+  });
+</script>
+
+</body>
+</html>
