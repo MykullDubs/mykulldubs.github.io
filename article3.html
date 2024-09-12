@@ -26,6 +26,18 @@
  display: block; 
 }
 
+ .question {
+    background-color: #fff; /* White question box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+}
+
+.question strong {
+    display: block;
+    margin-bottom: 10px;
+}
 .flashcard-container {
   margin-top: 2pc;    /* Top margin */
   margin-right: 15px;  /* Right margin */
@@ -222,7 +234,10 @@
 
   <div class="mdl-tabs__panel" id="discussion">
       <h2>Discussion:</h2>
-
+<div class="question">
+    <h3>Remembering & Understanding:</h3>
+    <p><strong>Question:</strong> Can you summarize the main points of the conflict between Taylor Morrison and Cy Porter?</p>
+    <p class="answer">...</p> </div>
     <h3>Remembering & Understanding:</h3>
     <p><strong>Question:</strong> Can you summarize the main points of the conflict between Taylor Morrison and Cy Porter?</p>
 
