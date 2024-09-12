@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ESL Article -Wisconsin's Mussels Struggling After Drought</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<style>
+.video-container {
+ /* Style your video container as needed */
+}
+
+.mdl-tabs {
+ /* Style your tabs navigation */
+ font-family: 'Roboto', sans-serif; /* Change to your desired font */
+  font-size: 32px;   /* Adjust font size */
+  font-weight: 500;  /* Adjust font weight */
+}
+
+.mdl-tabs__tab-panel {
+ display: none; 
+ overflow-y: auto;
+
+}
+
+.mdl-tabs__tab-panel.is-active {
+ display: block; 
+}
+
+ .question {
+    background-color: #fff; /* White question box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+}
+
+.question strong {
+    display: block;
+    margin-bottom: 10px;
+}
+.flashcard-container {
+  margin-top: 2pc;    /* Top margin */
+  margin-right: 15px;  /* Right margin */
+  margin-bottom: 25px; /* Bottom margin */
+  margin-left: 10px;   /* Left margin */
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ grid-auto-rows: minmax(200px, auto);
+ grid-gap: 20px 20px;
+ justify-content: center;
+}
+
+.flashcard {
+ cursor: pointer;
+ width: 97%; 
+ height: auto; 
+ min-height: 200px; 
+ perspective: 1000px; 
+ transition: transform 0.6s; 
+ transform-style: preserve-3d;
+
+ /* Use flexbox to center content */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.front, .back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden; 
+ border-radius: 2px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.front {
+ background-color: #fff;
+ color: #333;
+ /* Center content within the front */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 5px;
+}
+
+.back {
+ background-color: #3f51b5;
+ color: white;
+ transform: rotateY(180deg); /* Initially rotate the back face */
+ display: flex;
+ flex-direction: column;
+ padding: 5px;
+ overflow: hidden; 
+}
+
+.flashcard:hover {
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.back hr {
+ margin: 10px 0; 
+ border: 0;
+ border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.front p {
+ font-size: 1.2em;
+ font-weight: bold;
+}
+
+.back p {
+ font-size: 0.9em;
+ line-height: 1.5;
+}
+
+.flashcard.flipped {
+ transform: rotateY(180deg); 
+}
+
+#transcript { 
+ margin: 20px; 
+ overflow-y: auto; /* Add vertical scrolling */
+
+}
+ .vocab-word {
+    font-weight: bold;
+    color: red;
+}
+ #discussion {
+  overflow-y: auto;
+  font-size:28px;
+}
+</style>
+</head>
+<body>
+
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ynbY9PM7NG8?si=Pbd2nCR7T18hVS_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+    <a href="#vocabulary" class="mdl-tabs__tab is-active">Vocabulary</a>
+    <a href="#transcript" class="mdl-tabs__tab">Transcript</a>
+    <a href="#discussion" class="mdl-tabs__tab">Discussion</a>
+  </div>
+
+<div class="mdl-tabs__panel is-active" id="vocabulary">
+  <div class="flashcard-container">
+
+    <div class="flashcard">
+  <div class="front">Homebuilder</div>
+  <div class="back">
+    <p>Definition: A company that constructs houses.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Complaint</div>
+  <div class="back">
+    <p>Definition: A formal expression of dissatisfaction.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Harassing</div>
+  <div class="back">
+    <p>Definition: Persistently annoying or bothering someone.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Falsified</div>
+  <div class="back">
+    <p>Definition: Altered or made up to deceive.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Bullying</div>
+  <div class="back">
+    <p>Definition: Using strength or power to intimidate or harm someone.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Hearing</div>
+  <div class="back">
+    <p>Definition: A formal meeting to gather information or evidence.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Investigator</div>
+  <div class="back">
+    <p>Definition: A person who examines a situation to discover the truth.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Suspended</div>
+  <div class="back">
+    <p>Definition: Temporarily stopped or prevented from continuing.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Statutes</div>
+  <div class="back">
+    <p>Definition: Written laws enacted by a legislative body.</p>
+  </div>
+</div>
+
+<div class="flashcard">
+  <div class="front">Satirical</div>
+  <div class="back">
+    <p>Definition: Using humor or irony to criticize or mock something.</p>
+  </div>
+</div>
+
+  </div>
+</div>
+  <div class="mdl-tabs__panel" id="transcript">
+<h1>Wisconsin's Mussels Struggling After Drought</h1>
+
+<p><em>Wisconsin is coming back from its worst drought in decades. Along with unusually high temperatures, it's affected wildlife in and along the state's rivers. While spring rains ended the drought, recovery in some places has been slow. PBS Wisconsin's Nathan Denzeen   
+ tells us about one species that's been hit particularly hard.</em></p>
+
+<h2>The Drought's Impact</h2>
+
+<p>"We reached peak drought severity in September of last year. It has been a dry few years for Wisconsin. I started getting lots of phone calls from people saying there are all these mussels that are stranded and dying, what can we do? It has had a significant impact on the species we hardly think about. I was no longer picking up a mussel and placing it gently in the water. I was throwing them, as fast as I could."</p>
+
+<p>Much of southern Wisconsin was in a perpetual drought starting in the winter of 2021 through 2024. Droughts are very stressful to aquatic organisms, as well. The director of the Wisconsin river alliance -- "There is less space for things: animals, plants, insects and every thing else that they need to survive. One animal that can be squeezed out is our mussels."</p>
+
+<h2>The Importance of Mussels</h2>
+
+<p>Mussels. They are mollusks with shells in the rivers. One expert at the department of natural resources -- "They don't have a brain or eyes. They cannot just figure out where the deeper water is." She says there are tens of thousands on the bed of the Wisconsin river, including 40 different species. They filter as much as 10 gallons of water a day per mussel and when there are hundreds of thousands, they purify the water. Mussels started to wash up on shore banks.</p>
+
+<h2>The Alarm is Raised</h2>
+
+<p>"What I was looking for was actually historic artifacts. The water was so low, I had never seen it like this." A retired scientist for the department of natural resources lives near the Wisconsin river, northwest of Madison. She was also the first person to contact experts and she saw stranded mussels. "Mussels are a huge part of the ecology of the river. I thought, hey, I better ring the alarm."</p>
+
+<h2>The Dam's Role</h2>
+
+<p>A natural question is to ask how it affects water levels. "We had such a drought year, the dam did not have water." The dams along the river are not holding back water and cannot release anything more than they receive, meaning they cannot add more water to help mussels at the lower end of the river. Alliant Energy, who owns the dam, said, "Our license requires us to maintain the water level. Therefore, we cannot release more water during drought conditions."</p>
+
+<h2>Community Response</h2>
+
+<p>"On paper, nobody did anything wrong. Everybody was in compliance with the license, applications the entire time, yet, the outcome was tens of thousands, we don't know, to have them on the river." People say that the solution was to throw them back into the river. "There were thousands saved. People were picking up 100 a day, 300 a day. It was pretty amazing what people were willing to do."</p>
+
+<p>"It was getting to where I was spending three to four hours [rescuing mussels]. I was no longer looking at the artifacts." She saved more than 1200 herself. "Multiply that times 365 days a year, just those 1200 mussels, you are filtering over 3 million gallons of water."</p>
+
+<h2>Looking Ahead</h2>
+
+<p>2024 has been called the weather whiplash in the state. Some parts are still in a drought, but overall, this spring and summer are experiencing an unusually wet season. Still, should it dry up again, they will be ready. There is a live phone tree rescue system in place. "They can also contact me anytime. I can give advice as to what to do."</p>
+
+<p>Until the time comes to walk the shore banks again, experts will be glued to the weather. For pbs news weekend, Nathan Denzeen.</p>
+  </div>
+
+  <div class="mdl-tabs__panel" id="discussion">
+
+
+    <div class="question">
+        <h3>Remembering & Understanding:</h3>
+        <p><strong>Question:</strong> Can you summarize the main points of the conflict between Taylor Morrison and Cy Porter?</p>
+    </div>
+
+    <div class="question">
+        <h3>Applying:</h3>
+        <p><strong>Question:</strong> How might the outcome of this case affect other home inspectors or individuals who post reviews or critiques online?</p>
+    </div>
+
+    <div class="question">
+        <h3>Analyzing:</h3>
+        <p><strong>Question:</strong> What are the different perspectives presented in the article regarding Cy Porter's actions? How do these perspectives shape the overall narrative?</p>
+    </div>
+
+    <div class="question">
+        <h3>Evaluating:</h3>
+        <p><strong>Question:</strong> Do you believe the Arizona State Board of Technical Registration made the right decision in this case? Justify your response.</p>
+    </div>
+</div>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script>
+  // Initialize MDL components after the page loads
+  window.addEventListener('load', function() {
+    componentHandler.upgradeAllRegistered(); 
+  });
+
+  // JavaScript to handle card flipping
+  const flashcards = document.querySelectorAll('.flashcard');
+
+  flashcards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');   
+ 
+    });
+  });
+</script>
+
+</body>
+</html>
